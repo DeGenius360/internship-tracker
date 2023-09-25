@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import SideNav from './components/SideNav';
 import './App.css';
 
 
@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <SideNav />
     </div>
   );
 }
