@@ -23,6 +23,7 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 
 const SideNav = () => {
+
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -79,71 +80,9 @@ const SideNav = () => {
     ...theme.mixins.toolbar,
     justifyContent: "flex-end",
   }));
+
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <AppBar position="fixed" open={open}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{ mr: 2, ...(open && { display: "none" }) }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Internship Tracker
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          "& .MuiDrawer-paper": {
-            width: drawerWidth,
-            boxSizing: "border-box",
-          },
-        }}
-        variant="persistent"
-        anchor="left"
-        open={open}
-      >
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
-        <List></List>
-        <Divider />
-        <List>
-          {["Applications", "Tracker", "Resources"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {text === "Applications" && <AppsIcon />}
-                  {text === "Tracker" && <TrackerIcon />}
-                  {text === "Resources" && <ResourcesIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
-      <Main open={open}>
-        <DrawerHeader />
-        <Typography paragraph>--skfdf knfkdmvkdmv</Typography>
-        <Typography paragraph>swdknefneknfkendfk</Typography>
-      </Main>
-    </Box>
+    
   );
 };
 

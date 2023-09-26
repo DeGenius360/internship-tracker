@@ -1,0 +1,4 @@
+/* Custom CSS class to reduce space between items */
+.reduce-space {
+    margin-right: 8px; /* Adjust this value to control the spacing */
+  }
