@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather:wght@300&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+html,
+body,
+#root,
+.app{
+   display: flex;
+   position: relative;
+   font-family: 'Source Sans 3', sans-serif;
+}
+.content {
+  height: 100%;
+  width: 100%;
+}
+::-webkit-scrollbar{
+  width: 10px;
+
+}
+/* Track*/
+::-webkit-scrollbar-track{
+  background-color: #e0e0e0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Handle*/
+::-webkit-scrollbar-thumb{
+  background: #888;
+}
+
+/*Handle on Hover*/
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
 }
