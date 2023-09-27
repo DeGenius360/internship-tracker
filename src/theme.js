@@ -1,9 +1,10 @@
-import { createContex, useMemo } from "react";
-import { createTheme } from "@material-ui/core/styles";
+import { createContext, useMemo } from "react";
+import { createTheme } from "@mui/material/styles";
+import { useState } from "react";
 
 //color design tokens
 export const tokens = (mode) => ({
-  ...(mode == "dark"
+  ...(mode === "dark"
     ? {
         grey: {
           100: "#141414",
@@ -71,7 +72,7 @@ export const themeSettings = (mode) => {
   return {
     palette: {
       mode: mode,
-      ...(mode == "dark"
+      ...(mode === "dark"
         ? {
             primary: {
               main: colors.primary[500],
@@ -137,7 +138,7 @@ export const themeSettings = (mode) => {
 };
 
 //cotext
-export const ColorModeContext = createContex({
+export const ColorModeContext = createContext({
     toggleColorMode: () => {}
 });
 
