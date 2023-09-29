@@ -14,10 +14,16 @@ const Topbar = () => {
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
 
+  // Add console.log statements to inspect values
+  console.log("Topbar - Theme:", theme);
+  console.log("Topbar - Palette:", theme.palette);
+  console.log("Topbar - Mode:", theme.palette.mode);
+
   return (
-    <Box  style = {{display:"flex", justifyContent:"space-between", p:2 }}>
+    <Box style={{ display: "flex", justifyContent: "space-between", p: 2 }}>
       {/* SEARCH BAR */}
       <Box
+        display="flex"
         backgroundColor={colors.primary[400]}
         borderRadius="3px"
       >
@@ -29,7 +35,12 @@ const Topbar = () => {
 
       {/* ICONS */}
       <Box display="flex">
-        <IconButton onClick={colorMode.toggleColorMode}>
+        <IconButton
+          onClick={() => {
+            console.log("IconButton Clicked");
+            colorMode.toggleColorMode();
+          }}
+        >
           {theme.palette.mode === "dark" ? (
             <DarkModeOutlinedIcon />
           ) : (
