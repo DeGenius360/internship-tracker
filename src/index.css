@@ -4,10 +4,11 @@ html,
 body,
 #root,
 .app{
-   display: flex;
-   position: relative;
+   
+   
    font-family: 'Source Sans 3', sans-serif;
 }
+
 .content {
   height: 100%;
   width: 100%;
@@ -30,3 +31,6 @@ body,
 ::-webkit-scrollbar-thumb:hover{
   background: #555;
 }
+
+
+
