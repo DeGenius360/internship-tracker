@@ -1,6 +1,6 @@
 import { ResponsiveChoropleth } from "@nivo/geo";
 import { tokens } from "../theme";
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material";
 import { geoFeatures } from "../data/mockGeoFeatures";
 import { mockGeographyData as data } from "../data/mockData";
 
