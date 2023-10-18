@@ -8,10 +8,10 @@ internship tracker dashboard  built using reactjs and material-ui
 -yup
 
 # screenshots
-![Alt Text](https://github.com/DeGenius360/internship-tracker/blob/main/public/assets/sreenshot.jpg)
+![light mode]()
 
-
-
+# light mode 
+![dark mode]()
 
 
 # BORING STUFF BELOW
